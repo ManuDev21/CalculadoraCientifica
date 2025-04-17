@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Científica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container mt-5 text-center">
+    <h1 class="mb-4 text-light">Calculadora Cientifica</h1>
+    <div class="calculator card p-4 mx-auto shadow-lg">
+      <input type="text" id="display" class="form-control mb-3 text-end fs-4" readonly>
+      <div class="d-flex justify-content-between mb-2">
+        <button id="toggle-angle" class="btn btn-info btn-sm">Modo: DEG</button>
+        <button id="clear-memory" class="btn btn-warning btn-sm">MC</button>
+        <button id="recall-memory" class="btn btn-success btn-sm">MR</button>
+        <button id="save-memory" class="btn btn-primary btn-sm">MS</button>
+      </div>
+      <div class="row g-2">
+      </div>
+    </div>
+    <div id="history" class="mt-4 text-start text-light"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
